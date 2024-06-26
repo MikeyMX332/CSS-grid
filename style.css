@@ -13,34 +13,37 @@ body {
 .container {
     display: grid;
     grid-template-columns: 100px 100px 100px;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas: 
-    "header header header"
-    "main main sidebar"
-    "footer footer footer";
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 24px; /* Define al espacio entre filas y columnas pero no con los bordes */
+
+    row-gap: 48px; /* define espaxcios entre filas */
+
+    column-gap: 12px; /* Define el espacio entre columnas */
+
     width: 500px;
     height: 500px;
-    margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
-    background-color: rgb(250, 250, 255);
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
 }
 
-.header {
-    grid-area: header;
-    background-color: aqua;
+.item-1 {
+background-color: aqua;
 }
 
-.main {
-    grid-area: main;
-    background-color: blue;
+.item-2 {
+    background-color: chartreuse;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.item-3 {
     background-color: blueviolet;
 }
 
-.footer {
-     background-color: brown;
-    grid-area: footer;
+.item-4 {
+    background-color: chocolate;
+}
 
+.item-5 {
+    background-color: purple;
 }
