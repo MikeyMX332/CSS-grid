@@ -15,7 +15,7 @@ body {
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: repeat(3, 1fr);
 
-    gap: 24px; /* Define al espacio entre filas y columnas pero no con los bordes */
+    gap: 10px; /* Define al espacio entre filas y columnas pero no con los bordes */
 
     row-gap: 48px; /* define espaxcios entre filas */
 
@@ -25,25 +25,36 @@ body {
     height: 500px;
     margin: 0 auto;
     padding: 24px;
-    background-color: white;
+    background-color: goldenrod;
+
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+
+   direction: rtl;/* Esta propiedad permite cambiar direccion del flujo Grid. No pertenece a CSS-Grid */
 }
 
 .item-1 {
 background-color: aqua;
+font-size: 24px;
+text-align: center;
 }
 
 .item-2 {
     background-color: chartreuse;
+    font-size: 24px;
 }
 
 .item-3 {
     background-color: blueviolet;
+    font-size: 24px;
 }
 
 .item-4 {
     background-color: chocolate;
+    font-size: 24px;
 }
 
 .item-5 {
     background-color: purple;
+    font-size: 24px;
 }
